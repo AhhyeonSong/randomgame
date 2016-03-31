@@ -17,7 +17,8 @@ public class ResultActivity  extends ActionBarActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mResult=(TextView)findViewById(R.id.result);
+        mResult = (TextView) findViewById(R.id.result);
         mResult.setText("결과");
+    }
 
 }

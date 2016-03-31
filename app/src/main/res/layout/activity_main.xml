@@ -13,6 +13,16 @@
         android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Hello World!"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="47dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="우와아"
+        android:id="@+id/btn_show_me_the_chicekn"
+        android:layout_alignParentBottom="true" />
 
 </RelativeLayout>
