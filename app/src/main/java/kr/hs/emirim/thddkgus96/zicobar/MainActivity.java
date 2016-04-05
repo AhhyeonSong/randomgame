@@ -1,5 +1,6 @@
 package kr.hs.emirim.thddkgus96.zicobar;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -37,5 +38,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         Toast.makeText(this, "저도 배고파요", Toast.LENGTH_LONG).show();
+        Intent intent=new Intent(this, ResultActivity.class);
+        startActivity(intent);
     }
 }
