@@ -32,6 +32,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
     protected void onResume() {
         super.onResume();
         mName.setText(null);
+        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
     }
 
     /**
@@ -52,7 +53,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
 //
 
         try{
-            Toast.makeText(this, name + "씨, 저도 배고파요", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, name + "씨, 브라꾸비", Toast.LENGTH_LONG).show();
             Intent intent = new Intent(this, ResultActivity.class);
             intent.putExtra("name", name);
             intent.putExtra("age", 10);
@@ -63,8 +64,6 @@ public class MainActivity extends Activity implements View.OnClickListener{
         }catch(Exception e){
             Toast.makeText(this, "이유는 모르지만 실행이 안되네요..ㅠ", Toast.LENGTH_LONG).show();
         }
-
-
 
     }
 }

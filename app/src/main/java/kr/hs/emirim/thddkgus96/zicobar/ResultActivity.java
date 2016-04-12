@@ -30,11 +30,11 @@ public class ResultActivity  extends Activity {
         Log.d(TAG,"텍스트뷰, 이미지뷰 연결 성공!");
 
         Random r=new Random();
-        int result=r.nextInt(2);
+        int result=r.nextInt(3);
 
         Log.d(TAG,"랜덤값 생성 ! : "+result);
 
-        mImageView.setImageResource(R.drawable.c1+result);
+        mImageView.setImageResource(R.drawable.z1+result);
 
         Intent intent= getIntent();
         String name=intent.getStringExtra("name");
