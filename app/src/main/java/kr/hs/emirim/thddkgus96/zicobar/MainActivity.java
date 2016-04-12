@@ -25,6 +25,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
         mName = (EditText) findViewById(R.id.name);
         mButton = (Button) findViewById(R.id.btn_show_me_the_chicekn);
         mButton.setOnClickListener(this);
+
     }
 
     @Override
@@ -56,11 +57,13 @@ public class MainActivity extends Activity implements View.OnClickListener{
             intent.putExtra("name", name);
             intent.putExtra("age", 10);
             startActivity(intent);
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
         }catch(NullPointerException e){
             Toast.makeText(this, "이름을 입력해 주세요!!", Toast.LENGTH_LONG).show();
         }catch(Exception e){
             Toast.makeText(this, "이유는 모르지만 실행이 안되네요..ㅠ", Toast.LENGTH_LONG).show();
         }
+
 
 
     }
